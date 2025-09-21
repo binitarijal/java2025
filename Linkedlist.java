@@ -19,10 +19,14 @@ public static void main(String[] args) {
     b.next=c;
     c.next=d;
     d.next=null;
+    // System.out.println(a.data);
+    // System.out.println(b.data);
+    // System.out.println(c.data);
+    // System.out.println(d.data);
+
     System.out.println(a.data);
-    System.out.println(b.data);
-    System.out.println(c.data);
-    System.out.println(d.data);
+    System.out.println(a.next.data);
+    System.out.println(a.next.next.data);
 
 }
 }
