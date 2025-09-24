@@ -28,6 +28,17 @@ public static void main(String[] args) {
     // System.out.println(a.next.data);
     // System.out.println(a.next.next.data);
 
+
+
+    System.out.println(a.data);
+    System.out.println(b.data);
+    System.out.println(c.data);
+    System.out.println(d.data);
+
+    System.out.println(a.data);
+    System.out.println(a.next.data);
+    System.out.println(a.next.next.data);
+
     Node temp=a;
     while(temp!=null){
         System.out.println(temp.data);
