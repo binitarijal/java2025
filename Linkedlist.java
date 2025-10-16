@@ -8,12 +8,22 @@ public static class Node{
     Node(int dataa){
         this.data=dataa;
     }
-    public static void printt(Node head){
-        while(head != null){
-            System.out.println(head.data);
-            head=head.next;
+    // public static void printt(Node head){
+    //     while(head != null){
+    //         System.out.println(head.data);
+    //         head=head.next;
+    //     }
+    // }
+
+
+    public static void printtrecur(Node head){
+        if(head == null){
+            return;
         }
-    }
+        System.out.println(head.data);
+        printtrecur(head.next);
+        }
+    
 
 }
     public static void main(String[] args) {
@@ -39,6 +49,6 @@ public static class Node{
         //     temp=temp.next;
         //}
 
-       Node.printt(a);
+       Node.printtrecur(a);
     }
 }
